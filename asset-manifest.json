@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/travel-website/static/css/main.d702da0a.css",
+    "main.js": "/travel-website/static/js/main.5c498fa9.js",
+    "static/media/beachVid.mp4": "/travel-website/static/media/beachVid.aaafa1c17fc79e9a6d45.mp4",
+    "static/media/keywest.jpg": "/travel-website/static/media/keywest.1e30514942c6f50bea09.jpg",
+    "static/media/maldives2.jpg": "/travel-website/static/media/maldives2.ee088b6ef17100d7f85f.jpg",
+    "static/media/borabora.jpg": "/travel-website/static/media/borabora.e6c4841f299365fdfa10.jpg",
+    "static/media/borabora2.jpg": "/travel-website/static/media/borabora2.726ded1de37915f83c71.jpg",
+    "static/media/maldives.jpg": "/travel-website/static/media/maldives.6912181c1b1fc6c5fa6f.jpg",
+    "static/media/maldives3.jpg": "/travel-website/static/media/maldives3.9c3058f9a039c5a102a8.jpg",
+    "index.html": "/travel-website/index.html",
+    "main.d702da0a.css.map": "/travel-website/static/css/main.d702da0a.css.map",
+    "main.5c498fa9.js.map": "/travel-website/static/js/main.5c498fa9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d702da0a.css",
+    "static/js/main.5c498fa9.js"
+  ]
+}

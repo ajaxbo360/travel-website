@@ -17,17 +17,19 @@ const Carousel = () => {
     const [slide, setSlide] = useState(0);
 
     const length = sliderData.length
-    const prevSlide = () => {
+  const prevSlide = (e) => {
+      e.preventDefault();
          setSlide(slide === length - 1 ? 0 : slide + 1);
         
     }
-    const nextSlide = () => {
+  const nextSlide = (e) => {
+      e.preventDefault();
         setSlide(slide === 0 ? length - 1: slide - 1);
     }
   return (
       <div className='max-w-[1240px] mx-auto px-4 py-16 relative flex justify-center items-center '>
-          <BsArrowLeftSquareFill onClick={prevSlide} className='absolute top-[50%] text-3xl text-white left-8 cursor-pointer' />
-          <BsArrowRightSquareFill onClick={nextSlide} className='absolute top-[50%] text-3xl text-white right-8 cursor-pointer' />
+          <BsArrowLeftSquareFill onClick={prevSlide} className='absolute top-[50%] text-3xl text-white left-8 cursor-pointer transition-all duration-500 ease-in-out' />
+          <BsArrowRightSquareFill onClick={nextSlide} className='absolute top-[50%] text-3xl text-white right-8 cursor-pointer transition-all duration-500 ease-in-out' />
           {sliderData.map((item, index) => {
             return <div className={index === slide ? "opacity-100" : "opacity-0"}>
                      {index === slide && (<img src={item.url} alt="/"  className='w-full h-full object-cover rounded-md transition-all delay-800 '/>)}

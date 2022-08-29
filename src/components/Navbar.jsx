@@ -8,7 +8,8 @@ import { AiOutlineClose } from "react-icons/ai";
 export const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [logo, setLogo] = useState(false);
-    const handleNav = () => {
+    const handleNav = (e) => {
+        e.preventDefault();
         setNav(!nav);
         setLogo(!logo);
     }

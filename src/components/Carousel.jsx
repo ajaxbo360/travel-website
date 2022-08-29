@@ -31,7 +31,7 @@ const Carousel = () => {
           <BsArrowLeftSquareFill onClick={prevSlide} className='absolute top-[50%] text-3xl text-white left-8 cursor-pointer transition-all duration-500 ease-in-out' />
           <BsArrowRightSquareFill onClick={nextSlide} className='absolute top-[50%] text-3xl text-white right-8 cursor-pointer transition-all duration-500 ease-in-out' />
           {sliderData.map((item, index) => {
-            return <div className={index === slide ? "opacity-100" : "opacity-0"}>
+            return <div key={item.uniqueId} className={index === slide ? "opacity-100" : "opacity-0"}>
                      {index === slide && (<img src={item.url} alt="/"  className='w-full h-full object-cover rounded-md transition-all delay-800 '/>)}
                   </div>
           })}
